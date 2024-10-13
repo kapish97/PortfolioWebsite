@@ -512,6 +512,14 @@ main{
     font-size: 17px;
 }
 
+.feature-box .img{
+    max-width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #373737;
+}
+
 .feature-box-small{
     padding: 15px;
     align-items: center;
@@ -532,4 +540,161 @@ main{
     color: var(--dark-color);
     padding-left: 15px;
 
+}
+
+/* portfolio */
+
+.portfolio-box .portfolio-img {
+    position: relative;
+    border: 2px solid var(--dark-color);
+    box-shadow: 0 0 0 0 var(--dark-color);
+    transition: 0.3s;
+    
+}
+
+.portfolio-box .portfolio-img:hover{
+    box-shadow: 5px 5px 0 0 var(--dark-color);
+}
+
+.portfolio-box .portfolio-text span{
+    display: inline-block;
+    padding: 8px 20px;
+    background: rgba(255, 101, 28, .2);
+    color: var(--dark-color);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 30px;
+    margin-bottom: 18PX;
+}
+
+.portfolio-box .portfolio-text h4{
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+@media (max-width: 767px ) {
+    .portfolio-box .portfolio-text h4{
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+}
+
+
+.portfolio-box .portfolio-text .colored-btn{
+    font-size: 12px;
+}
+
+
+.owl-dots{
+    text-align: center;
+}
+
+
+.owl-dots .owl-dot{
+    display: inline-block;
+    vertical-align: top;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    transition: ease all 0.55s;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+.owl-dots .owl-dot.active{
+    background: var(--dark-color);
+}
+
+.contact-form{
+    border: 2px  solid var(--dark-color);
+    padding: 35px;
+    background: #fff;
+}
+
+@media (max-width:767px) {
+    .contact-form{
+        padding: 25px;
+    }
+}
+
+.contact-form .lead{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+
+.contact-form .form-control{
+    border-radius: 0;
+    border: 1px solid var(--dark-color);
+    box-shadow: none;
+    padding: 0.575rem .75rem;
+}
+
+.contact-infos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-infos li{
+    display: flex;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.contact-infos li:last-child{
+    padding-bottom: 0;
+}
+
+.contact-infos .icon{
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    font-size: 25px;
+}
+
+.contact-infos h5{
+    font-size: 14px;
+    margin: 0 0 5px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 2px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contact-infos p{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.footer{
+    background-color: var(--dark-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer .nav a{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.footer .nav a:hover{
+    color: var(--primary-color);
+}
+
+.footer .nav a + a{
+    margin-left: 18px;
 }
